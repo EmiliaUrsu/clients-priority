@@ -1,0 +1,23 @@
+<ol id="clients">
+</ol>
+
+<script>
+
+let clients = ["John","Marry","Kate"]
+let clientsHighPriority = ["Tob","Pete"]
+let clientsLowPriority = ["Vicky","Lessly"]
+let text = ""
+
+    clients.unshift("Tob","Pete")
+    clients.push("Vicky","Lessly")
+    
+function showClients(){
+    for ( i = 0 ; i < clients.length ; i++){
+       text+=  "<li>" + clients[i] + "</li>"
+         }
+     
+document.getElementById("clients").innerHTML = text
+        }
+    showClients()
+
+</script>
